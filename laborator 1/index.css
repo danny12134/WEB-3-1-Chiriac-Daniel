@@ -1,0 +1,146 @@
+/* Stilul general al paginii */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+    color: #222;
+
+    transition: 0.4s;
+}
+
+
+/* Containerul principal */
+
+.container {
+    width: 90%;
+    max-width: 800px;
+
+    margin: 50px auto;
+}
+
+
+/* Titlul */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #4f46e5;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* Cardurile */
+
+.card {
+    background-color: white;
+
+    padding: 25px;
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Lista */
+
+li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+
+/* Butoane */
+
+button {
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #4f46e5;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin: 5px;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #3730a3;
+    transform: scale(1.05);
+}
+
+
+/* Counter */
+
+#counter {
+    font-size: 50px;
+    font-weight: bold;
+
+    color: #4f46e5;
+
+    margin: 15px;
+}
+
+
+/* Link */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #4f46e5;
+    text-decoration: none;
+
+    font-size: 18px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Stil pentru culoarea alternativă */
+
+.dark {
+    background-color: #18181b;
+    color: white;
+}
+
+.dark .card {
+    background-color: #27272a;
+}
+
+.dark h1,
+.dark #counter {
+    color: #818cf8;
+}

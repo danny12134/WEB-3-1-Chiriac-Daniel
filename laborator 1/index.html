@@ -4,21 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pagina Mea</title>
+
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
-    <h1>Salut! Aceasta este Simularea la primmul laborator al meu</h1>
-    <p>Am incercat sa fac cva singur,(simplu).</p>
+    <div class="container">
 
-    <h2>O listă simplă:</h2>
-    <ul>
-        <li>Primul element</li>
-        <li>Al doilea element</li>
-        <li>Al treilea element</li>
-    </ul>
+        <header>
+            <h1>Salut! 👋</h1>
 
-    <a href="https://github.com">Navigheaza spre GitHub pentru a afla mai multe.</a>
+            <p>
+                Aceasta este simularea primului meu laborator.
+            </p>
+
+            <p>
+                Am încercat să fac ceva singur, simplu și puțin mai interesant.
+            </p>
+        </header>
+
+
+        <section class="card">
+            <h2>📋 O listă simplă</h2>
+
+            <ul id="lista">
+                <li>Primul element</li>
+                <li>Al doilea element</li>
+                <li>Al treilea element</li>
+            </ul>
+
+            <button id="addButton">
+                Adaugă un element
+            </button>
+        </section>
+
+
+        <section class="card">
+            <h2>🎨 Schimbă culoarea</h2>
+
+            <p>
+                Apasă butonul pentru a schimba culoarea paginii.
+            </p>
+
+            <button id="colorButton">
+                Schimbă culoarea
+            </button>
+        </section>
+
+
+        <section class="card">
+            <h2>🔢 Un mic counter</h2>
+
+            <div id="counter">0</div>
+
+            <button id="minusButton">-</button>
+            <button id="plusButton">+</button>
+            <button id="resetButton">Reset</button>
+        </section>
+
+
+        <footer>
+            <a
+                href="https://github.com"
+                target="_blank"
+            >
+                Navighează spre GitHub pentru a afla mai multe.
+            </a>
+        </footer>
+
+    </div>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
