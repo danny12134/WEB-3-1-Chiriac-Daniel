@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laborator 4 - Liste și metode Array</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f8;
+      padding: 30px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      width: 100%;
+      max-width: 560px;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 { text-align: center; color: #333; margin-top: 0; }
+    h2 { color: #333; margin-top: 0; font-size: 22px; }
+    .rand { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+    input[type="text"], input[type="number"] {
+      flex: 1;
+      min-width: 90px;
+      padding: 9px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      padding: 9px 14px;
+      border: none;
+      border-radius: 6px;
+      background: #4a6cf7;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover { background: #3754d4; }
+    .rosu { background: #d9534f; }
+    .rosu:hover { background: #b52b27; }
+    .verde { background: #2e9e5b; }
+    .verde:hover { background: #237d46; }
+    .mesaj { font-weight: bold; min-height: 22px; color: #333; }
+    .eroare { color: #d33; }
+    #lista-produse { padding-left: 20px; }
+    .elev {
+      border-bottom: 1px solid #eee;
+      padding: 10px 0;
+    }
+    .elev p { margin: 3px 0; }
+    .numar { font-weight: bold; color: #4a6cf7; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Laboratorul 4</h1>
+
+  <!-- Exercițiile 3 și 4: lista de cumpărături -->
+  <div class="card">
+    <h2>Lista de cumpărături</h2>
+    <div class="rand">
+      <input type="text" id="input-produs" placeholder="Introdu un produs...">
+    </div>
+    <div class="rand">
+      <button id="btn-adauga-sfarsit">Adaugă la sfârșit</button>
+      <button id="btn-adauga-inceput">Adaugă la început</button>
+    </div>
+    <div class="rand">
+      <button id="btn-sterge-primul" class="rosu">Șterge primul</button>
+      <button id="btn-sterge-ultimul" class="rosu">Șterge ultimul</button>
+    </div>
+    <p class="mesaj" id="mesaj-produse"></p>
+    <ul id="lista-produse"></ul>
+  </div>
+
+  <!-- Exercițiul 5: catalogul electronic -->
+  <div class="card">
+    <h2>Catalog electronic</h2>
+    <p>Număr de elevi: <span class="numar" id="numar-elevi">0</span></p>
+
+    <h3>Adaugă elev</h3>
+    <div class="rand">
+      <input type="text" id="input-nume" placeholder="Nume">
+      <input type="number" id="input-varsta" placeholder="Vârsta" min="1">
+      <input type="number" id="input-nota" placeholder="Nota" min="1" max="10">
+    </div>
+    <button id="btn-adauga-elev" class="verde">Adaugă elev</button>
+    <p class="mesaj" id="mesaj-adaugare"></p>
+
+    <h3>Șterge elev</h3>
+    <div class="rand">
+      <input type="text" id="input-sterge" placeholder="Numele elevului">
+      <button id="btn-sterge-elev" class="rosu">Șterge elev</button>
+    </div>
+    <p class="mesaj" id="mesaj-stergere"></p>
+
+    <h3>Caută elev</h3>
+    <div class="rand">
+      <input type="text" id="input-cauta" placeholder="Numele elevului">
+      <button id="btn-cauta-elev">Caută</button>
+    </div>
+    <p class="mesaj" id="mesaj-cautare"></p>
+
+    <h3>Lista elevilor</h3>
+    <div id="catalog"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
