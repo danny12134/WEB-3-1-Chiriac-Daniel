@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #555;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.tara {
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+.steag {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.steag td {
+    width: 60px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #ccc;
+}
+
+
+/* Steagul României: albastru, galben, roșu (vertical) */
+.romania td:nth-child(1) {
+    background-color: #002B7F;
+}
+
+.romania td:nth-child(2) {
+    background-color: #FCD116;
+}
+
+.romania td:nth-child(3) {
+    background-color: #CE1126;
+}
+
+
+/* Steagul Franței: albastru, alb, roșu (vertical) */
+.franta td:nth-child(1) {
+    background-color: #002395;
+}
+
+.franta td:nth-child(2) {
+    background-color: #FFFFFF;
+}
+
+.franta td:nth-child(3) {
+    background-color: #ED2939;
+}
+
+
+/* Steagul Italiei: verde, alb, roșu (vertical) */
+.italia td:nth-child(1) {
+    background-color: #009246;
+}
+
+.italia td:nth-child(2) {
+    background-color: #FFFFFF;
+}
+
+.italia td:nth-child(3) {
+    background-color: #CE2B37;
+}
+
+
+.comparativ {
+    background-color: white;
+    width: 80%;
+    margin: 30px auto;
+    padding: 25px;
+}
+
+.comparativ table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparativ th,
+.comparativ td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.comparativ th {
+    background-color: #333;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
