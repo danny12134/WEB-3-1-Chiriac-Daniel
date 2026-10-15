@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laborator 3 - Piatra, Hârtia, Foarfeca</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f8;
+      display: flex;
+      justify-content: center;
+      padding: 40px 15px;
+    }
+    .joc {
+      background: white;
+      width: 100%;
+      max-width: 480px;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 { color: #333; margin-top: 0; }
+    .butoane { display: flex; gap: 10px; justify-content: center; margin: 20px 0; }
+    .btn-alegere, #joc-nou {
+      padding: 12px 18px;
+      border: none;
+      border-radius: 6px;
+      background: #4a6cf7;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn-alegere:hover:not(:disabled), #joc-nou:hover { background: #3754d4; }
+    .btn-alegere:disabled { background: #aab; cursor: not-allowed; }
+    #joc-nou { background: #2e9e5b; margin-top: 10px; }
+    #joc-nou:hover { background: #237d46; }
+    .info p { margin: 8px 0; font-size: 17px; }
+    #rezultat { font-weight: bold; font-size: 20px; color: #333; min-height: 26px; }
+    #final { color: #d33; font-weight: bold; min-height: 24px; }
+  </style>
+</head>
+<body>
+  <div class="joc">
+    <h1>Piatra, Hârtia, Foarfeca</h1>
+
+    <div class="butoane">
+      <button class="btn-alegere" data-alegere="piatra">Piatra</button>
+      <button class="btn-alegere" data-alegere="hartia">Hârtia</button>
+      <button class="btn-alegere" data-alegere="foarfeca">Foarfeca</button>
+    </div>
+
+    <div class="info">
+      <p id="alegere-jucator">Alegerea ta: -</p>
+      <p id="alegere-calculator">Alegerea calculatorului: -</p>
+      <p id="rezultat"></p>
+      <p id="scor">Scor: Tu 0 - Calculator 0 (egalități: 0)</p>
+      <p id="runde">Runde jucate: 0</p>
+      <p id="final"></p>
+    </div>
+
+    <button id="joc-nou">Joc nou</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
